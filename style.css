@@ -32,23 +32,28 @@ header p {
 
 hr {
     margin: 0;
-    margin-right: 20px;
+    margin-left: 25px ;
     border: 1px solid #b9b9b9;
 }
 
 main {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between; /* Adicionamos esta propriedade para distribuir o espaço entre as seções */
 }
 #cabecalho{
+    flex-basis: calc(60% - 25px); /* Ajustamos o flex-basis para considerar o padding de 20px */
+    padding: 20px;
     margin-top: 10px;
 }
 .left {
-    width: 35%; 
+    flex-basis: calc(35% - 25px); /* Ajustamos o flex-basis para considerar o padding de 20px */
+
     padding: 20px;
     border-radius: 5px;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
+
 
 .left h2 {
     color: #3498db;
@@ -64,18 +69,24 @@ main {
     padding-left: 20px;
 }
 
-#content2 {
-    margin-left:20px ;
+#content1 {
+    flex-basis: calc(35% - 25px); /* Ajustamos o flex-basis para considerar o padding de 20px */
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
 
+#content2 {
+    flex-basis: calc(60% - 25px); /* Ajustamos o flex-basis para considerar o padding de 20px */
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
 #content2 h2 {
     color: #3498db;
     margin-top: 0;
 }
 
-#content2 article {
-    margin-bottom: 20px;
-}
+
 
 img {
     width: 150px;
